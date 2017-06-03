@@ -1,0 +1,397 @@
+/****************************************************************************
+*****************************************************************************
+**	STYLES GLOBAUX
+*****************************************************************************
+*****************************************************************************/
+*{
+	box-shadow: border-box;
+}
+body{	
+	background-image: url("./../img/pattern.jpg");
+	font-family: 'Baloo', cursive;	
+	color: #999999;
+	/*max-width: 1100px;*/
+}
+
+main{
+	margin: 0 auto;	
+	width: 75%; 
+}
+/**
+**	Titres h1 et h2
+**/
+h1, h2{
+	text-align: center;
+	font-weight: lighter;
+}
+h1:after, h1:before,h2:after, h2:before{
+	content: " - " ;
+}
+h2{
+	color: #0CB70C;
+	padding: 110px 0 30px 0;	
+	margin-bottom: 20px;	
+	/*border-bottom: 1px solid rgba(0,0,0,.1);	*/
+	box-shadow: 0 2px rgba(128,128,128,.1);
+}
+h3{
+	color:#0CB70C;
+	border-bottom: 1px solid red;
+}
+/**
+**	liens
+**/
+a{
+	text-decoration: none;	
+	font-weight: lighter;
+	color: #9999A5;
+}
+
+/**
+**	list-style-type: square;
+**/
+ul{
+	list-style: none;	
+}
+ul li{	
+	display: inline-block;
+}
+
+/***************************************************************************
+***************************************************************************
+**	STYLE DU HEADER
+***************************************************************************
+***************************************************************************/
+header{	
+	font-size: 18px;
+	font-weight: lighter;
+	/*text-align: center;*/
+	margin: 55px auto;	
+	width: 70%;
+	/*padding: 52px 40;*/
+	
+	color: #9999A5;
+}
+/**************************************************************************
+** Logo et Titre
+**************************************************************************/
+header > a{
+	font-size: 2em;
+}
+header > a img{
+	vertical-align: middle;
+	width: 4.5%;
+	padding: 0 10px; 
+	transition: all .25s ease-in-out; 
+}
+
+header #titre :hover{
+	transform: scale(1.3);	
+	color: #0cb70c;
+} 
+header #titre img :hover {
+	transform: scale(1.5);	
+}
+
+
+/**************************************************************************
+**	Barre de navigation
+***************************************************************************/
+header nav{
+	float: right;	
+	width: 50%;	
+	margin-top: -20px ;
+}
+
+header  nav ul{
+	width: 100%;	
+}
+header nav ul li{
+	width: 30%;
+	text-align: center;
+	display: inline;
+}
+
+/**************************************************************************
+**	icones de la barre de navigation
+***************************************************************************/
+header  nav ul li a{
+	display: inline-block;
+	transition: all .2s ease-in-out; 
+}
+header nav ul li a:hover{		
+}
+header nav ul li:nth-child(2):hover a:first-child{
+	color: #D98638;
+	margin-top: 20px;
+}
+
+header nav ul li:last-child{}
+
+/**************************************************************************
+**	icones de la barre de navigation
+***************************************************************************/
+header nav ul li:first-child :before{
+	content: "\f015";
+	font-family: FontAwesome;
+	display: block;
+	text-align: center;
+	padding-bottom: 15px;
+
+}
+header nav ul li:first-child :before:hover{	
+}
+
+header nav ul li:nth-child(2) :before{
+	content: "\f0c3";
+	font-family: FontAwesome;
+	display: block;
+	text-align: center;
+	padding-bottom: 15px;
+}
+header nav ul li:nth-child(2) :before :hover{
+
+}
+
+header nav ul li:last-child :before{
+	content: "\f0e0";
+	font-family: FontAwesome;
+	display: block;
+	text-align: center;
+	padding-bottom: 15px;
+}
+header nav ul li:last-child :before :hover{
+}
+
+/***************************************************************************
+***************************************************************************
+**	SECTION Présentation
+***************************************************************************
+*****************************************************************************/
+section#presentation h1{
+	border-bottom: 1px solid #D98638;
+	padding: 15px 0 ;
+}
+
+section#presentation{
+	background: url("./../img/oasis.jpg") no-repeat;
+	width: 100%;
+	display: block;	
+	text-align: center;
+	line-height: 1.8em;
+	color: #FFF;
+	font-size: 1em;	
+	padding: 190px 0 40px 0;
+} 
+section#presentation article{
+	margin: 0 auto;
+	width:85%;
+	font-weight: lighter;
+}
+
+section#presentation button{
+	padding: 24px 18px;
+	background-color: #0CB70C;
+	font-family: 'Baloo', sans-serif;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	text-decoration: none;
+	margin: 45px 0 90px 0;
+	transition: all .2s ease-in-out;
+}
+section#presentation button:hover{
+	cursor: pointer;
+	padding: 20px 25px;
+	margin: 5% 0 98px 0;
+
+}
+
+/***************************************************************************
+***************************************************************************
+**	STYLE DU MAIN
+***************************************************************************
+***************************************************************************/
+/*
+main section article{
+	display: inline-block;
+	text-align: center;
+}
+*/
+main figure{
+	display: inline-block;
+	margin: 0 10px;
+}
+main figure img{
+	width:90%;
+}
+main figcaption{
+	text-align:center;
+}
+main figure figcaption p.percent{
+	margin: 30px 0 0 0;
+	color: #777777;
+	font-size: 1.7em;
+	border-bottom: 1px solid red;
+}
+main figure figcaption p{		
+	margin: 0;
+	padding: 15px 0;	
+}
+
+main section#methodes article h3 :before{
+	content :"\f0f4";
+	font-family: FontAwesome;
+}
+
+/**
+** STYLE DES METHODES
+**/ 
+section{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+article{
+	float: left;
+	margin-left:0;
+	margin-right: 4.8%;	
+}
+article{
+	display:inline-block;	
+	width:30%;
+	line-height: 1.8em;
+}
+article:last-child{
+	float: right;
+	/*margin-left:4.8%;*/
+	margin-right: 0;	
+}
+
+div i{
+	text-align: center;
+	vertical-align: middle;	
+	/*border: 1px solid grey;*/
+	box-shadow: 0 2px rgba(128,128,128,.2);
+	border-radius: 50px;
+	padding: 15px;
+	transform: scale(1.3);
+	/*opacity: 0.4;*/
+	background-color: rgba(128,128,128,.1);
+	margin-bottom:15px; 
+}
+
+
+/**
+** STYLES DES REALISATIONS
+**/ 
+#realisations article{
+	display:block;
+	width: 100%;
+	text-align: left;
+	line-height: 1.8em;
+}
+#realisations :nth-child(even) img{
+	float: right;
+	width: 50%;
+	margin: 0 0 10px 10px;
+}
+#realisations :nth-child(odd) img{
+	float: left;
+	width: 50%;
+	margin: 10px 10px 0 0 ;
+}
+/**
+**	liens "en savoir plus"
+**/
+.plus{
+	line-height: 1.8em;
+	color : #0CB70C	;
+	padding-left: 20px;
+	transition: all .2s ease-in-out; 
+}
+
+#realisations a:after{
+	color:blue;
+	comment: "\f055";
+	font-family: FontAwesome;
+}
+.plus:hover{
+	 padding-left: 25px; 
+}
+
+/***************************************************************************
+***************************************************************************
+**	STYLE DU FORMULAIRE DE CONTACT
+***************************************************************************
+***************************************************************************/
+main section#contact {
+	text-align: center;
+}
+main section#contact article{
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	line-height: 1.8em;
+	width: 90%;
+	margin-bottom: 40px;
+}
+main section#contact article form, {
+	width: 90%;
+	text-align: center;
+}
+
+form img{
+	width: 3%;
+	vertical-align: middle;
+	position: relative;
+}
+form div{
+	display: inline-block;
+}
+form div input{
+	display: inline-block;
+	border: 1px solid #0CB70C;
+	border-radius: 5px;
+	width: 40%;
+	margin-left: -10px;
+
+}
+form textarea{
+	display: inline-block;
+	border: 1px solid #0CB70C;
+	border-radius: 5px;
+	width: 100%;
+}
+
+/**
+**	Boutons
+**/
+form button{
+	padding: 15px 20px;	
+	font-family: 'Baloo', sans-serif;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	text-decoration: none;
+	margin: 30px;
+
+}
+form button[type="submit"]{
+	background-color: #D98638;
+}
+form button[type="reset"]{
+	background-color: #999999;
+}
+
+/***************************************************************************
+***************************************************************************
+**	STYLE DU FOOTER
+***************************************************************************
+***************************************************************************/
+footer{
+	text-align: center;
+	font-size: 0.8em;
+	padding: 30px 0;	
+}
