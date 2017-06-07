@@ -1,283 +1,329 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>La page à bob: présentation</title>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<title>Fine cookies, boutique en ligne</title>
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
+		<link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="./img/favicon-fine-cookie.gif">
+	</head>
 
-	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-</head>
-
-<body>
-<!--
-*********************************************************************************************************
-*********************************************************************************************************
-** 		LOGO, TITRE ET BARRE DE NAVIGATION
-*********************************************************************************************************
-*********************************************************************************************************
--->
-	<header>
-		<a href="#" id="titre">			
-			<img src="./img/logo2.svg" alt="logo" id="logo">
-			<span >La page à Bob</span>			
-		</a>
-		<nav>
+	<body>
+		<!-- 
+		** EN TETE
+		** chanegement de langues, connexion client, panier
+		** menu de navigation, logo
+		** PRésentation produit
+		-->
+		<header>
 			<ul>
 				<li>
-					<a href="#">							
-						Accueil 
-					</a>
+					Langue 
 				</li>
 				<li>
-					<a href="#realisations"> 							
-						Réalisations 
-					</a>
+					<a href="#"><img src="./img/icon-fr.gif" alt="Français"> </a> 
 				</li>
 				<li>
-					<a href="#contact"> 							
-						Contact 
-					</a>
+					<a href="#"><img src="./img/icon-gb.gif" alt="English"> </a>				
+				</li>
+				<li>
+					<img src="img/icon-user.png" alt="icone user"> 
+				</li>
+				<li>
+					<a href="#">Connexion </a>
+				</li>
+				<li>
+					<img src="./img/icon-cart.png" alt="icone caddie"> 
+				</li>
+				<li>
+					<a href="#">Mon panier </a>
 				</li>
 			</ul>
-		</nav>
-	</header>	
-	
-<!--
-*********************************************************************************************************
-*********************************************************************************************************
-		PRESENTATION 
-*********************************************************************************************************
-*********************************************************************************************************
--->
-	<section id="presentation">
-		<article>
-			<h1>Bonjour et bienvenue sur mon portfolio</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<button>Découvrez-moi!</button>
-		</article>
-	</section>
 
-<!-- 
-*********************************************************************************************************
-*********************************************************************************************************
-		MAIN : PARTIE  PRINCIPALE
-*********************************************************************************************************
-*********************************************************************************************************
--->
-	<main>		
+			<img src="./img/logo-fine-cookies.png" alt="logo">
+			
+			<nav>				
+				<ul>
+					<li><a href="">Accueil</a></li>
+     				<li><a href="#biscuits"> Nos biscuits</a></li> 
+     				<li><a href="#histoire">Notre histoire</a></li>
+     				<li><span ></span></li> 
+     				<li><a href="#secrets">Secrets de fabrication</a></li> 
+     				<li><a href="#contact">Nous contacter</a></li>
+				</ul>
+			</nav>
+			
+				<figure class="container">
+					<img src="./img/img-cookie-tour.png" alt="cookies">				
+					<figcaption>
+						<h1>Massiv pepit</h1>
+						<h2>Pour les amoureux du chocolat</h2>
+						<p>
+						Découvrez le cookie Massiv Pepit, avec sa recette unique aux pépites de chocolat 
+						tellement généreuses que vous ne pourrez plus vous en passer !
+						</p>
+						<img src="./img/img-pepites.png" alt="pépites">						
+						
+					</figcaption>
+				</figure>
+				<button>Miam, j'en profite</button>				
+				
+		</header>
+		
 		<!-- 
-			COMPETENCES TECHNIQUES
+		** MAIN
 		-->
-		<section>
-			<h2>Mes compétences</h2>
-			<article>
-			<figure>
-				<img src="./img/html.svg" alt="html">
-				<figcaption>						
-					<p class="percent">80%</p>
-					<p>HTML</p>
-				</figcaption>
-			</figure>
-			</article>
+		<main>			
+			<section id="biscuits">
+				<span></span>
+				<h1>Si bons, si croustillants, craquez pour nos nouveaux biscuits</h1>
+				<span></span>
+				<article>	
+					<figure>
+						<img src="./img/produits/prod-big-sodelicious.jpg">
+						<figcaption>
+							<h2>
+								So’ delicious
+							</h2>
+							<p>
+								<span>23€</span> les 500g
+							</p>
+							<p>
+								Totalement croustillant, le cookie So’delicious vous transportera dans cet élan de saveur, laissez-vous (...)
+							</p>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="./img/produits/prod-big-naturespirit.jpg">
+						<figcaption>
+							<h2>
+								Nature Spirit
+							</h2>
+							<p>
+								<span>10€</span> les 500g
+							</p>
+							<p>
+								Juste quelques pépites de chocolat pour vous faire subtilment frissonner à chaque bouchées. 
+							</p>
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img src="./img/produits/prod-big-butterandpecan.jpg">
+						<figcaption>
+							<h2>
+								Butter & Pecan
+							</h2>
+							<p>
+								<span>15€</span> les 500g
+							</p>
+							<p>
+								Simple, bon et essentiel, le cookie Butter & Pecan sans chocolat est idéal pour se faire plaisir en été.
+							</p>
+						</figcaption>
+					</figure>
+					
+					<figure>
+						<img src="./img/produits/prod-big-cookiedingler.jpg">
+						<figcaption>
+							<h2>
+								Cookie Dingler
+							</h2>
+							<p>
+								<span>30€</span> les 500g
+							</p>
+							<p>
+								Le cookie libéré ! Ne pas le laisser tomber, il est si fragile. À déguster du bout des doigts.
+							</p>
+						</figcaption>
+					</figure>
+				</article>
+			</section>	
 			
-			<article>
-			<figure>
-				<img src="./img/css.svg" alt="css">
-				<figcaption>
-					<p class="percent">95%</p>
-					<p>CSS</p>						
-				</figcaption>
-			</figure>
-			</article>
+			<section id="secret">			
+				<h1>Pourquoi sont-ils si savoureux ? <span>Découvrez notre secret...</span></h1>
+				<article>				
+					<figure>
+						<img src="./img/img-1-ingredients.jpg" alt="ingrédients">
+						<!--<img src="./img/icon-bulle-num.png" alt>-->
+						<div class="bulle">1</div>
+						<figcaption>
+							<h3>
+								Des ingrédients soigneusement sélectionnés
+							</h3>
+							<p>
+								Fine Cookies prend le plus grand soin lors de la sélection de la matière première pour une qualité iréprochable du produit fini.
+							</p>						
+						</figcaption>
+					</figure>
 
-			<article>
-			<figure>
-				<img src="./img/js.svg" alt="JavaScript">
-				<figcaption>
-					<p class="percent">75%</p>
-					<p>JavaScript</p>						
-				</figcaption>
-			</figure>
-			</article>
-		</section>
-		
-<!--
-*********************************************************************************************************
-*********************************************************************************************************
-			METHODES UTILISEES
-*********************************************************************************************************
-*********************************************************************************************************
--->
-		<section id="methodes">
-			<h2>Mes méthodes</h2>
-			
-			<article>
-				<div>
-					<i class="fa fa-coffee" aria-hidden="true"></i>
-				</div>
-				<h3 id="discute">On discute</h3>
+					<figure>
+						<img src="./img/img-2-recettes.jpg" alt="recettes">
+						<!--<img src="./img/icon-bulle-num.png">-->
+						<div class="bulle">2</div>
+						<figcaption>
+							<h3>
+								Des recettes uniques depuis 1989
+							</h3>						
+							<p>
+								Toutes nos recettes sont basées sur les écrits légendaires de Don Cook, le fondateur même du Cookie à Paris en 1989.
+							</p>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="./img/img-3-preparation.jpg" alt="preparation">
+						<!--<img src="./img/icon-bulle-num.png">-->
+						<div class="bulle">3</div>		
+						<figcaption>
+							<h3>
+								Une prépation 100 % à la main par nos patissiers
+							</h3>						
+							<p>
+								Pour garantir le meilleur résultat possible nos patissiers diplômés préparent nos biscuits à la main. Du façonnage à la mise au four.
+							</p>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="./img/img-4-merci.jpg" alt="merci">
+						<!--<img src="./img/icon-bulle-num.png">-->
+						<div class="bulle">4</div>
+						<figcaption>
+							<h3>
+								C’est surtout grâce à vous !
+							</h3>						
+							<p>
+								Vous avez élu Fine Cookies meilleures recettes de cookie en 2011. Grâce à vous, Fine Cookies est devenue la référence absolue du cookie dans le monde entier !
+							</p>
+						</figcaption>
+					</figure>				
+				</article>			
+			</section>
+
+
+			<section id="plaisir">
+				<h1>Tout ce qu’il faut pour vous faire plaisir</h1>
+				<article>				
+					<section>
+						<figure>
+							<img src="./img/produits/prod-min-cacao-friese.jpg" alt="Cacao friese">
+							<figcaption>
+								Cacao Friese
+								23€ les 500g 
+							</figcaption>
+						</figure>
+						
+						<figure>
+							<img src="./img/produits/prod-min-marblepave.jpg" alt="Marble pave">
+							<figcaption>							
+								Marble Pave
+								13€ les 500g 
+							</figcaption>						
+						</figure>
+
+						<figure>
+							<img src="./img/produits/prod-min-shellyform.jpg" alt="Shelly Foam">
+							<figcaption>						
+								Shelly Foam
+								10€ les 500g 
+							</figcaption>
+						</figure>
+					</section>
+
+					<section>
+						<figure>
+							<img src="./img/produits/prod-min-marbreduo.jpg" alt="Marbre duo">
+							<figcaption>
+								Marbre Duo
+								13€ les 500g 
+							</figcaption>
+						</figure>
+						
+						<figure>
+							<img src="./img/produits/prod-min-straw.jpg" alt="strawfilled">
+							<figcaption>						
+								Strawfilled
+								23€ les 500g 
+							</figcaption>
+						</figure>
+						
+						<figure>
+							<img src="./img/produits/prod-big-sugar-pallet.jpg" alt="Sugar Pallet">
+							<figcaption>
+								Sugar Pallet
+								18€ les 500g 
+							</figcaption>
+						</figure>
+					</section>
+					<a href="#">Voir le catalogue</a>
+				</article>
+
+				<article>
+					<h4>Savourez en toute liberté</h4>
+
+					<section>
+						<figure>
+							<img src="./img/bg-etiquette-argu-livraison.jpg" alt="Etiquette livraison">
+							<figcaption>
+								<h4>Livraison assurée dans 80 pays</h4>
+								<a href="#">Trouver un point relais</a>
+							</figcaption>
+						</figure>
+
+						<figure>
+							<img src="./img/bg-etiquette-argu-boxlivraison.jpg" alt="Etiquette livraison">
+							<figcaption>
+								<h4>Dégustez-les chez vous en 24h chrono !</h4>
+								<a href="#">Commander maintenant</a>								
+							</figcaption>
+						</figure>
+						
+						<figure>
+							<img src="./img/bg-etiquette-argu-ticket.jpg" alt="Etiquette ticket">
+							<figcaption>
+								<h4>100 points = -20% sur votre commande</h4>
+								<a href="">Trouver un point relais</a>							
+							</figcaption>
+						</figure>
+					</section>
+
+					<!-- 
+					** Liens réseaux sociaux
+					-->
+					<section>
+						<a href="#">
+							<img src="./img/icon-facebook.png" alt="facebook"> 
+							Rejoignez-nous sur facebook
+						</a>
+						<a href="#">
+							<img src="./img/icon-twitter.png" alt="twitter"> 
+							Suivez-nous sur twitter
+						</a>
+					</section>				
+				</article>
+			</section>
+		</main>
+		<div id="prefoot"></div>
+		<footer id ="contact">
+			<div>
+				<img src="./img/logo-fine-cookies.png" alt="logo">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-			</article><!--						
-		--><article>
-				<div>
-					<i class="fa fa-free-code-camp" aria-hidden="true"></i> 										
-				</div>
-				<h3>On réfléchit</h3>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-			</article><!--						
-		--><article>
-				<div>
-					<i class="fa fa-code" aria-hidden="true"></i> 										
-				</div>
-				<h3>On fait</h3>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-			</article>
-		</section>
-
-
-<!--*****************************************************************************************************
-*********************************************************************************************************
-**
-**	REALISATIONS
-**
-*********************************************************************************************************
-*********************************************************************************************************-->
-
-
-		<section id="realisations">
-			<h2>Quelques exemples de réalisations</h2>
-			<article>
-				<h3>L'horreur :</h3>				
-				<img src="./img/realisation/1.jpg" alt="horreur">
-				<section>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					
-					<a href="#" class="plus">En savoir plus
-					<i class="fa fa-plus-circle" aria-hidden="true"></i>
-					</a>
-				</section>
-			</article>
-
-			<article>
-				<h3>L'amour :</h3>				
-				<img src="./img/realisation/2.png" alt="amour">
-				<section>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					
-					<a href="#" class="plus">
-						En savoir plus
-						<i class="fa fa-plus-circle" aria-hidden="true"></i>
-					</a>
-				</section>
-			</article>
-
-			<article>
-				<h3>La science fiction :</h3>				
-				<img src="./img/realisation/3.jpg" alt="science-fiction">
-				<section>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					
-					<a href="#" class="plus">
-					En savoir plus
-					<i class="fa fa-plus-circle" aria-hidden="true"></i>
-					</a>
-				</section>
-			</article>
-
-			<article>
-				<h3>Le policier :</h3>				
-				<img src="./img/realisation/4.jpg" alt="policier">
-				<section>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					
-					<a href="#" class="plus">
-					En savoir plus
-					<i class="fa fa-plus-circle" aria-hidden="true"></i>
-					</a>
-				</section>
-			</article>
-		</section>
-
-<!--
-*********************************************************************************************************
-*********************************************************************************************************
-** 		Formulaire de contact
-*********************************************************************************************************
-*********************************************************************************************************
--->
-		<section id="contact">
-			<h2>Contactez-moi pour tout vos besoins</h2>
-			<article>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</article>
-			
-			<form>
-				<div>
-				<img src="./img/bg_form_name.svg" alt="">
-				<input type="text" name="nom" id="nom" placeholder="Comment qu'il s'appelle">					
-				<img src="./img/bg_form_mail.svg" alt="">
-				<input type="email" name="email" id="email" placeholder="Comment que je le contacte">
-				</div>
-
-				<div>
-				<img src="./img/bg_form_message.svg" alt="">
-				<textarea name="comment" id="comment" placeholder ="Qu'est-ce qu'il veut ?"></textarea>
-				</div>
-				<button type="submit" name="send" id="send"> Envoyer</button>
-				<button type="reset" name="reset" id="reset">Effacer</button>
-			</form>
-		
-		</section>
-	</main>
-	
-<!--
-*********************************************************************************************************
-*********************************************************************************************************
-		FOOTER - COPYRIGHT
-*********************************************************************************************************
-*********************************************************************************************************
--->	
-
-	<footer>Copyright:2017</footer>
-	<script src="https://use.fontawesome.com/5529839cbd.js"></script>
-</body>
+					Venez nous rendre visite !
+				    Fine Cookies Shop
+				    14 rue Thomas Knoll
+				    77830 Toshop
+				    Tél : 01.00.82.85.09
+			    </p>
+			</div>
+			<p>
+				Fine Cookies 2012 - © Copyright Living Tuts et Webdesigner Trends.
+			</p>
+			<p>
+				Tutoriel Photoshop + Intégration HTML5, CSS3 - Création : webdesignertrends.com - Site et marque fictive.
+			</p>
+		</footer>
+	</body>
 </html>

@@ -1,397 +1,252 @@
-/****************************************************************************
-*****************************************************************************
+/********************************************************************
+*********************************************************************
 **	STYLES GLOBAUX
-*****************************************************************************
-*****************************************************************************/
-*{
-	box-shadow: border-box;
+*********************************************************************
+*********************************************************************/
+html{
+	font-size: 62.5%
 }
-body{	
-	background-image: url("./../img/pattern.jpg");
-	font-family: 'Baloo', cursive;	
-	color: #999999;
-	/*max-width: 1100px;*/
+body{
+	margin : 0;
+	padding: 0;
+	font-size: 1.4rem;
 }
-
-main{
-	margin: 0 auto;	
-	width: 75%; 
+header, main, nav{
+	margin : 0 auto;
+	width: 75%;
 }
-/**
-**	Titres h1 et h2
-**/
-h1, h2{
-	text-align: center;
-	font-weight: lighter;
-}
-h1:after, h1:before,h2:after, h2:before{
-	content: " - " ;
-}
-h2{
-	color: #0CB70C;
-	padding: 110px 0 30px 0;	
-	margin-bottom: 20px;	
-	/*border-bottom: 1px solid rgba(0,0,0,.1);	*/
-	box-shadow: 0 2px rgba(128,128,128,.1);
-}
-h3{
-	color:#0CB70C;
-	border-bottom: 1px solid red;
-}
-/**
-**	liens
-**/
 a{
-	text-decoration: none;	
-	font-weight: lighter;
-	color: #9999A5;
-}
-
-/**
-**	list-style-type: square;
-**/
-ul{
-	list-style: none;	
-}
-ul li{	
-	display: inline-block;
-}
-
-/***************************************************************************
-***************************************************************************
-**	STYLE DU HEADER
-***************************************************************************
-***************************************************************************/
-header{	
-	font-size: 18px;
-	font-weight: lighter;
-	/*text-align: center;*/
-	margin: 55px auto;	
-	width: 70%;
-	/*padding: 52px 40;*/
-	
-	color: #9999A5;
-}
-/**************************************************************************
-** Logo et Titre
-**************************************************************************/
-header > a{
-	font-size: 2em;
-}
-header > a img{
-	vertical-align: middle;
-	width: 4.5%;
-	padding: 0 10px; 
-	transition: all .25s ease-in-out; 
-}
-
-header #titre :hover{
-	transform: scale(1.3);	
-	color: #0cb70c;
-} 
-header #titre img :hover {
-	transform: scale(1.5);	
-}
-
-
-/**************************************************************************
-**	Barre de navigation
-***************************************************************************/
-header nav{
-	float: right;	
-	width: 50%;	
-	margin-top: -20px ;
-}
-
-header  nav ul{
-	width: 100%;	
-}
-header nav ul li{
-	width: 30%;
-	text-align: center;
-	display: inline;
-}
-
-/**************************************************************************
-**	icones de la barre de navigation
-***************************************************************************/
-header  nav ul li a{
-	display: inline-block;
-	transition: all .2s ease-in-out; 
-}
-header nav ul li a:hover{		
-}
-header nav ul li:nth-child(2):hover a:first-child{
-	color: #D98638;
-	margin-top: 20px;
-}
-
-header nav ul li:last-child{}
-
-/**************************************************************************
-**	icones de la barre de navigation
-***************************************************************************/
-header nav ul li:first-child :before{
-	content: "\f015";
-	font-family: FontAwesome;
-	display: block;
-	text-align: center;
-	padding-bottom: 15px;
-
-}
-header nav ul li:first-child :before:hover{	
-}
-
-header nav ul li:nth-child(2) :before{
-	content: "\f0c3";
-	font-family: FontAwesome;
-	display: block;
-	text-align: center;
-	padding-bottom: 15px;
-}
-header nav ul li:nth-child(2) :before :hover{
-
-}
-
-header nav ul li:last-child :before{
-	content: "\f0e0";
-	font-family: FontAwesome;
-	display: block;
-	text-align: center;
-	padding-bottom: 15px;
-}
-header nav ul li:last-child :before :hover{
-}
-
-/***************************************************************************
-***************************************************************************
-**	SECTION Présentation
-***************************************************************************
-*****************************************************************************/
-section#presentation h1{
-	border-bottom: 1px solid #D98638;
-	padding: 15px 0 ;
-}
-
-section#presentation{
-	background: url("./../img/oasis.jpg") no-repeat;
-	width: 100%;
-	display: block;	
-	text-align: center;
-	line-height: 1.8em;
-	color: #FFF;
-	font-size: 1em;	
-	padding: 190px 0 40px 0;
-} 
-section#presentation article{
-	margin: 0 auto;
-	width:85%;
-	font-weight: lighter;
-}
-
-section#presentation button{
-	padding: 24px 18px;
-	background-color: #0CB70C;
-	font-family: 'Baloo', sans-serif;
-	color: #fff;
-	border: none;
-	border-radius: 8px;
 	text-decoration: none;
-	margin: 45px 0 90px 0;
-	transition: all .2s ease-in-out;
+	color:#000;
+	transition: 0.5s;
 }
-section#presentation button:hover{
-	cursor: pointer;
-	padding: 20px 25px;
-	margin: 5% 0 98px 0;
-
+a:hover{
+	color: #EEA914;
 }
-
-/***************************************************************************
-***************************************************************************
-**	STYLE DU MAIN
-***************************************************************************
-***************************************************************************/
-/*
-main section article{
-	display: inline-block;
-	text-align: center;
-}
-*/
-main figure{
-	display: inline-block;
-	margin: 0 10px;
-}
-main figure img{
-	width:90%;
-}
-main figcaption{
+h1, h2{
 	text-align:center;
 }
-main figure figcaption p.percent{
-	margin: 30px 0 0 0;
-	color: #777777;
-	font-size: 1.7em;
-	border-bottom: 1px solid red;
-}
-main figure figcaption p{		
-	margin: 0;
-	padding: 15px 0;	
-}
-
-main section#methodes article h3 :before{
-	content :"\f0f4";
-	font-family: FontAwesome;
-}
-
-/**
-** STYLE DES METHODES
-**/ 
-section{
-	display: inline-block;
-	text-align: center;
-	width: 100%;
-}
-
-article{
-	float: left;
-	margin-left:0;
-	margin-right: 4.8%;	
-}
-article{
-	display:inline-block;	
-	width:30%;
-	line-height: 1.8em;
-}
-article:last-child{
-	float: right;
-	/*margin-left:4.8%;*/
-	margin-right: 0;	
-}
-
-div i{
-	text-align: center;
-	vertical-align: middle;	
-	/*border: 1px solid grey;*/
-	box-shadow: 0 2px rgba(128,128,128,.2);
-	border-radius: 50px;
-	padding: 15px;
-	transform: scale(1.3);
-	/*opacity: 0.4;*/
-	background-color: rgba(128,128,128,.1);
-	margin-bottom:15px; 
-}
-
-
-/**
-** STYLES DES REALISATIONS
-**/ 
-#realisations article{
-	display:block;
-	width: 100%;
-	text-align: left;
-	line-height: 1.8em;
-}
-#realisations :nth-child(even) img{
-	float: right;
-	width: 50%;
-	margin: 0 0 10px 10px;
-}
-#realisations :nth-child(odd) img{
-	float: left;
-	width: 50%;
-	margin: 10px 10px 0 0 ;
-}
-/**
-**	liens "en savoir plus"
-**/
-.plus{
-	line-height: 1.8em;
-	color : #0CB70C	;
-	padding-left: 20px;
-	transition: all .2s ease-in-out; 
-}
-
-#realisations a:after{
-	color:blue;
-	comment: "\f055";
-	font-family: FontAwesome;
-}
-.plus:hover{
-	 padding-left: 25px; 
-}
-
-/***************************************************************************
-***************************************************************************
-**	STYLE DU FORMULAIRE DE CONTACT
-***************************************************************************
-***************************************************************************/
-main section#contact {
-	text-align: center;
-}
-main section#contact article{
-	display: inline-block;
-	width: 100%;
-	text-align: left;
-	line-height: 1.8em;
-	width: 90%;
-	margin-bottom: 40px;
-}
-main section#contact article form, {
-	width: 90%;
-	text-align: center;
-}
-
-form img{
-	width: 3%;
-	vertical-align: middle;
+/********************************************************************
+*********************************************************************
+** STYLE DU HEADER
+*********************************************************************
+*********************************************************************/
+header{
+	background: url("./../img/bg-header.gif")  no-repeat top center;
+	margin:0;
+    padding: 5% 0 0% 0;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
+	width: 100%;	
+	font-family: 'Overlock', cursive;
+	color:#69696c;
+	border-bottom: 1px solid #D1D2CB;
 	position: relative;
 }
-form div{
-	display: inline-block;
+header :after{
+	background : url("bg-ombre-address.png") no-repeat center;
 }
-form div input{
-	display: inline-block;
-	border: 1px solid #0CB70C;
-	border-radius: 5px;
-	width: 40%;
-	margin-left: -10px;
-
+header p{
+	text-align: right;
 }
-form textarea{
-	display: inline-block;
-	border: 1px solid #0CB70C;
-	border-radius: 5px;
-	width: 100%;
+header ul{
+	text-align: right;
+    position: absolute;
+    top: -1%;
+    left: 67%;
+}
+header ul li{
+	display: inline-block;		
 }
 
 /**
-**	Boutons
+**	Menu de navigation
 **/
-form button{
-	padding: 15px 20px;	
-	font-family: 'Baloo', sans-serif;
-	color: #fff;
-	border: none;
-	border-radius: 8px;
-	text-decoration: none;
-	margin: 30px;
-
+header nav{
+	border-bottom: 1px solid #A3A599;
+	background: url("./../img/pat-menu.gif");
+	box-shadow: 2px 2px 2px grey;
+	border-radius: 5px;
+	vertical-align: middle;	
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: no wrap;
+	vertical-align: middle;
+    padding: 2%;
+    margin-top: -3%;
 }
-form button[type="submit"]{
-	background-color: #D98638;
-}
-form button[type="reset"]{
-	background-color: #999999;
-}
-
-/***************************************************************************
-***************************************************************************
-**	STYLE DU FOOTER
-***************************************************************************
-***************************************************************************/
-footer{
+header nav ul{
 	text-align: center;
-	font-size: 0.8em;
-	padding: 30px 0;	
+	width: 75%;
+	font-weight: 700;
+	left: 5%;
+	top: 7%;
+}
+header nav ul li{
+	width: 15%;
+}
+header nav ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Fredoka one",cursive;	
+	color: #29888c;
+}
+header nav ul li:after{
+	background-image: url("./img/img-sep.png");/* no-repeat center;*/
+}
+header nav ul li a:hover{
+	transition-duration: 0.5s;
+  	transition-property: color;
+}
+
+header > img{
+	position: absolute;
+	left: 45%;
+	top: 3%;
+	text-align: center;
+	transition: 1s;
+}
+header > img:hover{
+	transform : translatey(20px);
+	cursor: pointer;
+}
+header span {
+	background: url("./../img/btn-gocart.png") no-repeat cover;
+}
+.container{
+	background: url("./../img/bg-planche-head.jpg") no-repeat fixed;
+	background: no-repeat bottom url("./../img/bg-planche-head.jpg");
+	margin: 0 auto;
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+}
+.container h1{
+	font-family: "Fredoka One", cursive;
+	font-size: 7rem;
+	font-weight: 700;
+	margin-top: 7.5rem;
+	margin-bottom: 0;
+	color: #E84743;
+	text-transform: uppercase;
+}
+.container h2{
+	font-family: "Cookie", cursive;
+	font-size: 5rem;
+	font-weight: lighter;
+	color: #EEA914;
+	margin: -2% 0;
+}
+.container > img{
+	margin-right: 7%;
+    padding: 5% 0 7% 15%;
+}
+header figure:after{
+	background: url("./../img/img-planche.png");
+}
+.container p{
+	text-align: left;
+}
+figcaption img{
+	padding-left:0;
+	display: inline;
+}
+button{
+	background: url("./../img/btn-gocart.png") no-repeat;	
+	padding: 1% 6% 1% 4%;
+	border: none;
+	font-family: "Fredoka One", cursive;
+	color: #fff;
+	position: absolute;
+    left: 62%;
+    top: 62%;
+}
+
+/********************************************************************
+*********************************************************************
+** STYLE DU MAIN
+*********************************************************************
+*********************************************************************/
+main{
+	overflow: hidden;
+}
+
+article figure{	
+	margin: 0;	
+	text-align: center;
+	display: inline-flex;
+	justify-content: space-around;
+	flex-direction: row;	
+	flex-wrap: wrap;
+	width: 24%;	
+}
+main article figure img{
+	border-bottom: 1px solid #A9403D;
+	transition: 1s;
+}
+main article figure img:hover{
+	opacity: 0.3;	
+}
+
+#biscuits h1{
+	color: #EA4743;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+main section#biscuits h1:before {
+	/*background: url("./../img/bg-rayures.jpg");*/
+	background-color: blue;
+}
+#biscuits h2{
+	text-align: center;
+	color: #E84743;
+}
+#biscuits figure figcaption p{
+	text-align: center;
+}
+#biscuits figure figcaption p span{
+	background-color: #E84743;
+	color: #fff;
+	padding: 10px;
+	transition : 0.5s;
+}
+#biscuits figure figcaption p span:hover{
+	background-color: #EEA914; 
+	cursor: pointer;
+}
+
+
+#secret{
+	background-color: #E84743;
+}
+section#plaisir h1{
+	display: block;
+}
+section#plaisir article{
+	display: inline-flex;
+	justify-content: space-around;
+	flex-direction: row;	
+}
+
+section#plaisir div:last-child{
+	background-color: blue;
+}
+
+/********************************************************************
+*********************************************************************
+** STYLE DU FOOTER
+*********************************************************************
+*********************************************************************/
+div#prefoot{
+	background: url("./../img/bg-planche-head.jpg") no-repeat center fixed;
+	background-position: top;
+	width: 100%;
+}
+footer{
+	margin:0;
+  	padding:0;	
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */	
+	text-align: center;
 }
